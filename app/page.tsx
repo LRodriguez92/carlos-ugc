@@ -17,6 +17,21 @@ const videos = {
   quantis: "https://ugcvessup-cf4fe.web.app/videos/quantis.mov"
 }
 
+const thumbnails = {
+  audiio: "/images/thumbnails/audiio.jpg",
+  car1: "/images/thumbnails/car1.jpg",
+  car2: "/images/thumbnails/car2.jpg",
+  car3: "/images/thumbnails/car3.jpg",
+  car4: "/images/thumbnails/car4.jpg",
+  keeper1: "/images/thumbnails/keeper1.jpg",
+  keeper2: "/images/thumbnails/keeper2.jpg",
+  keeper3: "/images/thumbnails/keeper3.jpg",
+  keeper4: "/images/thumbnails/keeper4.jpg",
+  pgytech: "/images/thumbnails/phytech.jpg",
+  plaudAi: "/images/thumbnails/plaud.jpg",
+  quantis: "/images/thumbnails/quantis.jpg"
+}
+
 export default function LandingPage() {
   return (
     <main className="min-h-screen bg-black text-white">
@@ -69,16 +84,16 @@ export default function LandingPage() {
         <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">VIDEOS</p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.audiio} label="AUDIIO" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.audiio} thumbnailUrl={thumbnails.audiio} label="AUDIIO" lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.plaudAi} label="PLAUD AI" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.plaudAi} thumbnailUrl={thumbnails.plaudAi} label="PLAUD AI" lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.quantis} label="QUANTIS" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.quantis} thumbnailUrl={thumbnails.quantis} label="QUANTIS" lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.pgytech} label="PGYTECH" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.pgytech} thumbnailUrl={thumbnails.pgytech} label="PGYTECH" lazyLoad />
           </div>
         </div>
       </section>
@@ -89,16 +104,16 @@ export default function LandingPage() {
         <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">KEEPER AI</p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper1} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper1} thumbnailUrl={thumbnails.keeper1} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper2} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper2} thumbnailUrl={thumbnails.keeper2} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper3} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper3} thumbnailUrl={thumbnails.keeper3} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper4} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper4} thumbnailUrl={thumbnails.keeper4} lazyLoad />
           </div>
         </div>
       </section>
@@ -111,16 +126,16 @@ export default function LandingPage() {
         </p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car1} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car1} thumbnailUrl={thumbnails.car1} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car2} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car2} thumbnailUrl={thumbnails.car2} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car3} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car3} thumbnailUrl={thumbnails.car3} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car4} lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car4} thumbnailUrl={thumbnails.car4} lazyLoad />
           </div>
         </div>
       </section>

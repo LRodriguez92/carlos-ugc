@@ -6,11 +6,12 @@ import { Play } from "lucide-react"
 
 interface IPhoneVideoPlayerProps {
   videoUrl: string
+  thumbnailUrl: string
   label?: string
   lazyLoad?: boolean
 }
 
-export function IPhoneVideoPlayer({ videoUrl, label }: IPhoneVideoPlayerProps) {
+export function IPhoneVideoPlayer({ videoUrl, thumbnailUrl, label }: IPhoneVideoPlayerProps) {
   const [isPlaying, setIsPlaying] = useState(false)
   const [showControls, setShowControls] = useState(false)
   const videoRef = useRef<HTMLVideoElement>(null)
@@ -43,6 +44,7 @@ export function IPhoneVideoPlayer({ videoUrl, label }: IPhoneVideoPlayerProps) {
               ref={videoRef}
               src={videoUrl}
               className="w-full h-full object-cover rounded-[30px]"
+              poster={thumbnailUrl}
               preload="auto"
               onClickCapture={handlePlayPause}
               onPlay={() => setIsPlaying(true)}
@@ -51,7 +53,6 @@ export function IPhoneVideoPlayer({ videoUrl, label }: IPhoneVideoPlayerProps) {
               onMouseEnter={() => setShowControls(true)}
               onMouseLeave={() => setShowControls(false)}
               playsInline
-              poster={`${videoUrl}#t=0.1`}
               controlsList="nodownload nofullscreen noremoteplayback"
             />
             {!isPlaying && (
