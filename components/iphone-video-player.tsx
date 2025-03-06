@@ -42,7 +42,8 @@ export function IPhoneVideoPlayer({ videoUrl, label }: IPhoneVideoPlayerProps) {
             <video
               ref={videoRef}
               src={videoUrl}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover rounded-[30px]"
+              preload="auto"
               onClickCapture={handlePlayPause}
               onPlay={() => setIsPlaying(true)}
               onPause={() => setIsPlaying(false)}
@@ -50,7 +51,6 @@ export function IPhoneVideoPlayer({ videoUrl, label }: IPhoneVideoPlayerProps) {
               onMouseEnter={() => setShowControls(true)}
               onMouseLeave={() => setShowControls(false)}
               playsInline
-              preload="metadata"
               poster={`${videoUrl}#t=0.1`}
               controlsList="nodownload nofullscreen noremoteplayback"
             />
