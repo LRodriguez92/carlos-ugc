@@ -12,6 +12,27 @@ const robotoCondensed = Roboto_Condensed({
 export const metadata: Metadata = {
   title: "Carlos Vessup - UGC Creator & Content Partner",
   description: "Professional content creator specializing in UGC, videography, and photography.",
+  icons: {
+    icon: '/favicon.ico',
+    shortcut: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    other: [
+      {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '96x96',
+        url: '/favicon-96x96.png',
+      },
+      {
+        rel: 'manifest',
+        url: '/web-app-manifest-192x192.png'
+      },
+      {
+        rel: 'manifest',
+        url: '/web-app-manifest-512x512.png'
+      }
+    ]
+  }
 }
 
 export default function RootLayout({
