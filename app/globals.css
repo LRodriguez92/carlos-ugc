@@ -140,3 +140,14 @@ h2 {
   }
 }
 
+@media (max-width: 639px) {
+  .text-outline-white {
+    margin-top: -11px !important;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 1023px) {
+  .text-outline-white {
+    margin-top: -17px !important;
+  }
+}
