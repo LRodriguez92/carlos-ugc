@@ -89,16 +89,16 @@ export default function LandingPage() {
         <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">KEEPER AI</p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper1} label="KEEPER AI" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper1} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper2} label="KEEPER AI" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper2} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper3} label="KEEPER AI" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper3} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper4} label="KEEPER AI" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.keeper4} lazyLoad />
           </div>
         </div>
       </section>
@@ -111,16 +111,16 @@ export default function LandingPage() {
         </p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car1} label="SUCTION CUP" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car1} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car2} label="SUCTION CUP" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car2} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car3} label="SUCTION CUP" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car3} lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={videos.car4} label="SUCTION CUP" lazyLoad />
+            <IPhoneVideoPlayer videoUrl={videos.car4} lazyLoad />
           </div>
         </div>
       </section>
