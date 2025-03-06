@@ -149,9 +149,9 @@ export default function LandingPage() {
             </h2>
             <p className="text-xl">CARLOS@VESSUPVISUALS.COM</p>
             <div className="flex gap-8">
-              <ClientSideButton href="#" icon="Instagram" />
-              <ClientSideButton href="#" icon="TikTok" />
-              <ClientSideButton href="#" icon="Twitter" />
+              <ClientSideButton href="https://www.instagram.com/carlosalfredovessup/" icon="Instagram" />
+              <ClientSideButton href="https://www.tiktok.com/@ugcvessup3" icon="TikTok" />
+              <ClientSideButton href="https://x.com/ugcvessup" icon="Twitter" />
             </div>
             <ClientSideButton href="mailto:carlos@vessupvisuals.com" large />
           </div>
