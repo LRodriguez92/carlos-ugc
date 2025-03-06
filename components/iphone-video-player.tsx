@@ -7,6 +7,7 @@ import { Play } from "lucide-react"
 interface IPhoneVideoPlayerProps {
   videoUrl: string
   label?: string
+  lazyLoad?: boolean
 }
 
 export function IPhoneVideoPlayer({ videoUrl, label }: IPhoneVideoPlayerProps) {

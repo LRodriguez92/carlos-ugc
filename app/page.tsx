@@ -2,11 +2,19 @@ import Image from "next/image"
 import { IPhoneVideoPlayer } from "@/components/iphone-video-player"
 import ClientSideButton from "@/components/client-side-button"
 
-const dummyVideos = {
-  audio: "https://example.com/audio-video.mp4",
-  plaidAi: "https://example.com/plaid-ai-video.mp4",
-  quantis: "https://example.com/quantis-video.mp4",
-  poitech: "https://example.com/poitech-video.mp4",
+const videos = {
+  audiio: "https://ugcvessup-cf4fe.web.app/videos/audiio.mp4",
+  car1: "https://ugcvessup-cf4fe.web.app/videos/car1.mov",
+  car2: "https://ugcvessup-cf4fe.web.app/videos/car2.mov",
+  car3: "https://ugcvessup-cf4fe.web.app/videos/car3.mov",
+  car4: "https://ugcvessup-cf4fe.web.app/videos/car4.mov",
+  keeper1: "https://ugcvessup-cf4fe.web.app/videos/keeper1.mp4",
+  keeper2: "https://ugcvessup-cf4fe.web.app/videos/keeper2.mp4",
+  keeper3: "https://ugcvessup-cf4fe.web.app/videos/keeper3.mp4",
+  keeper4: "https://ugcvessup-cf4fe.web.app/videos/keeper4.mp4",
+  pgytech: "https://ugcvessup-cf4fe.web.app/videos/phytech.mov",
+  plaudAi: "https://ugcvessup-cf4fe.web.app/videos/plaud.mov",
+  quantis: "https://ugcvessup-cf4fe.web.app/videos/quantis.mov"
 }
 
 export default function LandingPage() {
@@ -61,16 +69,16 @@ export default function LandingPage() {
         <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">VIDEOS</p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
           <div>
-            <IPhoneVideoPlayer videoUrl={dummyVideos.audio} label="AUDIIO" />
+            <IPhoneVideoPlayer videoUrl={videos.audiio} label="AUDIIO" lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={dummyVideos.plaidAi} label="PLAID AI" />
+            <IPhoneVideoPlayer videoUrl={videos.plaudAi} label="PLAUD AI" lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={dummyVideos.quantis} label="QUANTIS" />
+            <IPhoneVideoPlayer videoUrl={videos.quantis} label="QUANTIS" lazyLoad />
           </div>
           <div>
-            <IPhoneVideoPlayer videoUrl={dummyVideos.poitech} label="PGYTECH" />
+            <IPhoneVideoPlayer videoUrl={videos.pgytech} label="PGYTECH" lazyLoad />
           </div>
         </div>
       </section>
@@ -80,11 +88,18 @@ export default function LandingPage() {
         <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-2">EXAMPLES</h2>
         <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">KEEPER AI</p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i}>
-              <IPhoneVideoPlayer videoUrl={dummyVideos.audio} />
-            </div>
-          ))}
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper1} label="KEEPER AI" lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper2} label="KEEPER AI" lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper3} label="KEEPER AI" lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper4} label="KEEPER AI" lazyLoad />
+          </div>
         </div>
       </section>
 
@@ -95,11 +110,18 @@ export default function LandingPage() {
           SUCTION CUP CONTENT
         </p>
         <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i}>
-              <IPhoneVideoPlayer videoUrl={dummyVideos.audio} />
-            </div>
-          ))}
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.car1} label="SUCTION CUP" lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.car2} label="SUCTION CUP" lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.car3} label="SUCTION CUP" lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.car4} label="SUCTION CUP" lazyLoad />
+          </div>
         </div>
       </section>
 
