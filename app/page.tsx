@@ -17,7 +17,7 @@ export default function LandingPage() {
         <div className="grid grid-cols-2 gap-4 sm:gap-8 items-center">
           <div className="relative">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC04675-2-no-bg.png-nUPaybjtA2W3fsDN7VDQsYF3C6YdvW.jpeg"
+              src="/images/hero.png"
               alt="Carlos Vessup"
               width={500}
               height={750}
@@ -107,28 +107,28 @@ export default function LandingPage() {
       <section className="container mx-auto px-4 py-20">
         <div className="flex flex-col items-center">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo1.jpg-dYALterLGugWdCITc3vfUukWRV91D5.jpeg"
+            src="/images/logo1.jpg"
             alt="Audiio"
             width={120}
             height={120}
             className="opacity-90"
           />
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo2.jpg-9Ew3xdufLUuei4T5qtuqWBJ3F44Mrr.jpeg"
+            src="/images/logo2.jpg"
             alt="Ulanzi Video Accessories"
             width={300}
             height={80}
             className="opacity-90"
           />
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo3-cropped.jpg-5RtELkdcXL0r8ljbdBnU7jeX7EzqgV.jpeg"
+            src="/images/logo3.jpg"
             alt="PGYTECH"
             width={300}
             height={50}
             className="opacity-90"
           />
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Logo4-cropped.jpg-cUCYhUj4fYZShEgLTcCD057QigeDIo.jpeg"
+            src="/images/logo4.jpg"
             alt="Keeper"
             width={300}
             height={60}
@@ -157,7 +157,7 @@ export default function LandingPage() {
           </div>
           <div className="relative">
             <Image
-              src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/DSC04618.png-i8WxMkQH6zt7VIm30WyBaUjcddA6fi.jpeg"
+              src="/images/footer.png"
               alt="Carlos Vessup Portrait"
               width={500}
               height={750}
