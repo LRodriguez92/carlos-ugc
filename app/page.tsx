@@ -37,9 +37,16 @@ const thumbnails = {
 
 export default function LandingPage() {
   const [ua, setUa] = useState("");
+  const [isTikTokWebView, setIsTikTokWebView] = useState(false);
 
   useEffect(() => {
     setUa(navigator.userAgent);
+    const userAgent = navigator.userAgent.toLowerCase();
+    setIsTikTokWebView(
+      userAgent.includes('tiktok') ||
+      userAgent.includes('musical_ly') ||
+      userAgent.includes('bytedance')
+    );
   }, []);
 
   return (
@@ -200,7 +207,7 @@ export default function LandingPage() {
               <ClientSideButton href="https://www.tiktok.com/@ugcvessup3" icon="TikTok" />
               <ClientSideButton href="https://x.com/ugcvessup" icon="Twitter" />
             </div>
-            <TikTokWebViewHandler email="carlos@vessupvisuals.com"   />
+            <TikTokWebViewHandler email="carlos@vessupvisuals.com"/>
           </div>
           <div className="relative">
             <Image
