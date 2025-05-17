@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image"
 import { IPhoneVideoPlayer } from "@/components/iphone-video-player"
 import ClientSideButton from "@/components/client-side-button"
