@@ -3,7 +3,7 @@ import Image from "next/image"
 import { IPhoneVideoPlayer } from "@/components/iphone-video-player"
 import ClientSideButton from "@/components/client-side-button"
 import { TikTokWebViewHandler } from "@/components/tiktok-webview-handler"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 
 const videos = {
   audiio: "https://ugcvessup-cf4fe.web.app/videos/audiio.mp4",
@@ -36,8 +36,10 @@ const thumbnails = {
 }
 
 export default function LandingPage() {
+  const [ua, setUa] = useState("");
+
   useEffect(() => {
-    alert(navigator.userAgent);
+    setUa(navigator.userAgent);
   }, []);
 
   return (
@@ -213,6 +215,10 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
+
+      <div style={{wordBreak: 'break-all', color: 'yellow', background: 'black', fontSize: 12, marginTop: 8}}>
+        UA: {ua}
+      </div>
     </main>
   )
 }
