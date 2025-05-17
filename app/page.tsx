@@ -2,6 +2,7 @@ import Image from "next/image"
 import { IPhoneVideoPlayer } from "@/components/iphone-video-player"
 import ClientSideButton from "@/components/client-side-button"
 import { TikTokWebViewHandler } from "@/components/tiktok-webview-handler"
+import { useEffect } from "react"
 
 const videos = {
   audiio: "https://ugcvessup-cf4fe.web.app/videos/audiio.mp4",
@@ -34,6 +35,10 @@ const thumbnails = {
 }
 
 export default function LandingPage() {
+  useEffect(() => {
+    alert(navigator.userAgent);
+  }, []);
+
   return (
     <main className="min-h-screen bg-black text-white">
       {/* Hero Section */}
