@@ -67,9 +67,6 @@ export default function LandingPage() {
               <br className="hidden sm:inline" />
               PROFESSIONAL RELATABLE CONTENT & PARTNERSHIP
             </p>
-            {/* <div className="flex justify-center">
-              <ClientSideButton href="mailto:carlos@vessupvisuals.com" />
-            </div> */}
             <TikTokWebViewHandler email="carlos@vessupvisuals.com"/>
             <p className="text-xs sm:text-sm md:text-base lg:text-[22px] leading-relaxed w-full">
               As a professional content creator, I specialize in capturing high-quality, relatable content for brands

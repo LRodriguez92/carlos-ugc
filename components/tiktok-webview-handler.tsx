@@ -35,8 +35,8 @@ export function TikTokWebViewHandler({ email, forceShow = false }: TikTokWebView
   if (isTikTokWebView) {
     return (
       <div className="mt-6 flex flex-col items-center">
-        <div className="flex items-center gap-2 bg-gradient-to-r from-black to-gray-400 rounded-lg px-5 py-3 shadow-lg">
-          <span className="text-lg font-bold tracking-wide text-white select-all">{email}</span>
+        <div className="inline-flex items-center gap-2 bg-gradient-to-r from-black to-gray-400 rounded-md px-3 py-2 shadow-md max-w-full">
+          <span className="text-base font-bold tracking-wide text-white select-all max-w-[180px] truncate">{email}</span>
           <button
             onClick={copyEmail}
             className={`ml-2 p-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-40 transition-all duration-150 ${
