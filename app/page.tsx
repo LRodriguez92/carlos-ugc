@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { IPhoneVideoPlayer } from "@/components/iphone-video-player"
 import ClientSideButton from "@/components/client-side-button"
+import { TikTokWebViewHandler } from "@/components/tiktok-webview-handler"
 
 const videos = {
   audiio: "https://ugcvessup-cf4fe.web.app/videos/audiio.mp4",
@@ -66,9 +67,10 @@ export default function LandingPage() {
               <br className="hidden sm:inline" />
               PROFESSIONAL RELATABLE CONTENT & PARTNERSHIP
             </p>
-            <div className="flex justify-center">
+            {/* <div className="flex justify-center">
               <ClientSideButton href="mailto:carlos@vessupvisuals.com" />
-            </div>
+            </div> */}
+            <TikTokWebViewHandler email="carlos@vessupvisuals.com"/>
             <p className="text-xs sm:text-sm md:text-base lg:text-[22px] leading-relaxed w-full">
               As a professional content creator, I specialize in capturing high-quality, relatable content for brands
               looking to increase their sales and engagement through UGC, videography and photography. I produce
@@ -190,7 +192,7 @@ export default function LandingPage() {
               <ClientSideButton href="https://www.tiktok.com/@ugcvessup3" icon="TikTok" />
               <ClientSideButton href="https://x.com/ugcvessup" icon="Twitter" />
             </div>
-            <ClientSideButton href="mailto:carlos@vessupvisuals.com" large />
+            <TikTokWebViewHandler email="carlos@vessupvisuals.com"   />
           </div>
           <div className="relative">
             <Image
