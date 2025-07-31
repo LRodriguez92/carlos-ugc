@@ -77,6 +77,26 @@ export default function LandingPage() {
         </div>
       </section>
 
+      {/* Examples Keeper AI Section */}
+      <section className="container mx-auto px-4 py-20 text-center">
+        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-2">EXAMPLES</h2>
+        <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">KEEPER AI</p>
+        <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper1} thumbnailUrl={thumbnails.keeper1} lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper2} thumbnailUrl={thumbnails.keeper2} lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper3} thumbnailUrl={thumbnails.keeper3} lazyLoad />
+          </div>
+          <div>
+            <IPhoneVideoPlayer videoUrl={videos.keeper4} thumbnailUrl={thumbnails.keeper4} lazyLoad />
+          </div>
+        </div>
+      </section>
+      
       {/* Example Section */}
       <section className="container mx-auto px-4 py-20 text-center">
         <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-2">EXAMPLE</h2>
@@ -97,47 +117,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Examples Keeper AI Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
-        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-2">EXAMPLES</h2>
-        <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">KEEPER AI</p>
-        <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper1} thumbnailUrl={thumbnails.keeper1} lazyLoad />
-          </div>
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper2} thumbnailUrl={thumbnails.keeper2} lazyLoad />
-          </div>
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper3} thumbnailUrl={thumbnails.keeper3} lazyLoad />
-          </div>
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.keeper4} thumbnailUrl={thumbnails.keeper4} lazyLoad />
-          </div>
-        </div>
-      </section>
 
-      {/* Examples Suction Cup Content Section */}
-      <section className="container mx-auto px-4 py-20 text-center">
-        <h2 className="text-5xl md:text-7xl font-bold tracking-tighter mb-2">EXAMPLES</h2>
-        <p className="text-[45px] font-bold tracking-[-1px] -mt-6 text-black text-outline-white mb-16">
-          SUCTION CUP CONTENT
-        </p>
-        <div className="grid grid-cols-2 custom930:grid-cols-4 gap-4 sm:gap-6 md:gap-8 justify-items-center">
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.car1} thumbnailUrl={thumbnails.car1} lazyLoad />
-          </div>
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.car2} thumbnailUrl={thumbnails.car2} lazyLoad />
-          </div>
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.car3} thumbnailUrl={thumbnails.car3} lazyLoad />
-          </div>
-          <div>
-            <IPhoneVideoPlayer videoUrl={videos.car4} thumbnailUrl={thumbnails.car4} lazyLoad />
-          </div>
-        </div>
-      </section>
 
       {/* Partners Section */}
       <section className="container mx-auto px-4 py-20">
